@@ -1,0 +1,215 @@
+/*
+Theme Name: ReBar-Base
+Theme URI: http://www.bitofnothing.com
+Author: Kyle Thielk
+Author URI: http://www.bitofnothing.com
+Description: ReBar is a beautiful theme that favors simplicity and clean lines over gloss and shiny things.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, gray, white, one-column, two-columns, right-sidebar, flexible-width, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: rebar-base
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Background Pattern Generator: http://www.patternify.com/
+*/
+body {
+    margin: 0;
+    padding: 0;
+
+    background: #fafbfc url(images/bg.png) 0 0 repeat;
+    color: #555555;
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+
+}
+
+.wrap {
+    width: 100%;
+}
+
+.header-text {
+    font-family: "freight-sans-pro", sans-serif;
+}
+
+.left-column {
+    float: left;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    padding: 20px 5px;
+    /*background-color: #404853;*/
+    text-align: center;
+    text-shadow: 0 2px 0 #000;
+    background: #404853 url(images/left_bg.png) 0 0 repeat;
+
+    color: #FFF;
+
+    -moz-box-shadow: 1px 0px 8px #717171;
+    -webkit-box-shadow: 1px 0px 8px #717171;
+    box-shadow: 1px 0px 8px #717171;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#717171')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength = 4, Direction = 135, Color = '#717171');
+}
+
+.right-column {
+    float: left;
+    width: 700px;
+    height: 100%;
+    position: absolute;
+    left: 261px;
+    padding: 20px;
+
+}
+
+.left-column a {
+    font-size: 170%;
+    color: #fff;
+    text-decoration: none;
+}
+
+.left-column a:hover {
+    color: #8ec63e;
+}
+
+.post-box {
+    margin: 10px 0 0 8px;
+    font-weight: normal;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    -webkit-box-shadow: rgba(200, 200, 200, 0.7) 0 4px 10px -1px;
+    box-shadow: rgba(200, 200, 200, 0.7) 0 4px 10px -1px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    padding-bottom: 10px;
+}
+
+.muted-text {
+    color: #bcbcbc;
+}
+
+.date {
+    font-size: 90%;
+    padding-left: 8px;
+    float: right;
+    margin: -25px 15px 0 0;
+}
+
+a {
+    color: #265990;
+    text-decoration: none;
+    border-bottom: 1px solid #CCC;
+}
+
+a:hover {
+    color: #449CF3;
+}
+
+h1 {
+    font-size: 125%;
+}
+
+h1 a {
+    text-decoration: none;
+    border: none;
+}
+
+h2 {
+    margin: 15px 10px 5px 15px;
+    font-size: 120%;
+}
+
+h2 a {
+    text-decoration: none;
+    border: none;
+    color: #404853;
+}
+
+h2 a:hover {
+    color: #8dc640;
+}
+
+.site-description {
+    color: #DDD;
+    font-size: 90%;
+    margin: 0;
+    padding:0;
+}
+
+.featured-image {
+    border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    -khtml-border-radius: 3px 3px 0 0;
+    -webkit-border-radius: 3px 3px 0 0;
+}
+
+.post-text {
+    margin: 0 15px 35px 15px;
+    overflow: auto;
+}
+
+.categories-container {
+    position: relative;
+}
+
+.categories {
+    margin: 0 15px;
+    position: absolute;
+}
+
+.categories a {
+    color: #8dc640;
+    text-decoration: none;
+    border: none;
+}
+
+.categories a:hover {
+    color: #FFAE00;
+}
+
+.muted-hover {
+    opacity: 0.4;
+}
+
+.muted-hover:hover {
+    opacity: 0.8;
+}
+
+.muted-hover a {
+    color: inherit;
+    border: none;
+    text-decoration: none;
+}
+
+.comment-bubble-container {
+
+    font-size: 80%;
+    position: relative;
+    margin: 0 0 0 15px;
+}
+
+.bottom-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.bottom-left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.page-links
+{
+    width: 100%;
+    position: relative;
+    height:55px;
+}
+.page-links div{
+    margin-bottom: 15px;
+}
