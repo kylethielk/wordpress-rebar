@@ -266,7 +266,7 @@ h2 a:hover {
     box-shadow: #E9E9E9 0 0px 1px 1px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
-    height:65px;
+    height: 65px;
     padding: 11px 10px 10px 10px;
     width: 60px;
 }
@@ -624,6 +624,8 @@ a img.aligncenter {
     margin-right: auto
 }
 
+.wp-caption-text,
+.gallery-caption,
 .wp-caption {
     background: #fff;
     border: 1px solid #f0f0f0;
@@ -658,4 +660,12 @@ a img.aligncenter {
     line-height: 17px;
     margin: 0;
     padding: 0 4px 5px;
+}
+
+.sticky {
+
+}
+
+.gallery-caption {
+
 }

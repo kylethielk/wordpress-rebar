@@ -64,7 +64,7 @@ if (!function_exists('rebar_limit_tags')) :
                 {
                     break;
                 }
-                $output .= '<a href="' . get_tag_link($tag->term_id) . '" title="' . esc_attr(sprintf(__("View all posts in %s"), $tag->name)) . '">' . $tag->name . '</a>' . $separator;
+                $output .= '<a href="' . get_tag_link($tag->term_id) . '" title="' . esc_attr("View all posts in " . $tag->name) . '">' . $tag->name . '</a>' . $separator;
                 $count++;
             }
 
@@ -101,7 +101,7 @@ if (!function_exists('rebar_limit_categories')) :
                 {
                     break;
                 }
-                $output .= '<a href="' . get_category_link($category->term_id) . '" title="' . esc_attr(sprintf(__("View all posts in %s"), $category->name)) . '">' . $category->cat_name . '</a>' . $separator;
+                $output .= '<a href="' . get_category_link($category->term_id) . '" title="' . esc_attr("View all posts in " . $category->name) . '">' . $category->cat_name . '</a>' . $separator;
                 $count++;
             }
 
@@ -129,7 +129,7 @@ if (!function_exists('rebar_post_meta')) :
         ?>
     <div class="categories-container clearfix post-meta">
         <div class="muted-hover comment-meta">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/comment-bubble.gif"/>&nbsp;<?php comments_popup_link('0 Comments', '1 Comment', '% Comments'); ?>
+            <img src="<?php get_stylesheet_directory_uri(); ?>/images/comment-bubble.gif"/>&nbsp;<?php comments_popup_link('0 Comments', '1 Comment', '% Comments'); ?>
         </div>
         <?php if (get_the_category() && !is_single()) : ?>
         <span class="muted-text categories">Posted in <?php rebar_limit_categories(); ?></span><br/>
